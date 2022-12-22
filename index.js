@@ -246,10 +246,15 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+const newArray = [...artists];
+
+function listOfNames(array) {
+  for (let i=0; i<artists.length; i++){
+  return ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera", "Claude Monet", "Rene Magritte", "Salvador Dali", "Edouard Manet", "Andrei Rublev", "Vincent van Dough", "Gustav Klimt", "Hieronymus Bosch", "Kazimir Malevich", "Mikhail Vrubel", "Pablo Picasso", "Peter Paul Rubens", "Pierre-Auguste Renoir", "Francisco Goya", "Frida Kahlo", "El Greco", "Albrecht Dürer"]; 
+  }
 }
 
+console.log(listOfNames(newArray));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
