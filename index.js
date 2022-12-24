@@ -219,8 +219,8 @@ console.log(artists[2].bio);
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 
-artists[8].name= 'Vincent Van Gogh';
-console.log(artists[8].name);
+// artists[8].name= 'Vincent Van Gogh';
+// console.log(artists[8].name);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
@@ -266,10 +266,16 @@ Use removeArtist to do the following:
 5. Return the resulting copied array
 🌟 EXAMPLE: if removeArtist is invoked with the artists array and the number 0, it will return the resulting array with Amedeo Modigliani removed from our dataset. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+const newArray2= [...artists];
+const number= 'id';
+
+function removeArtist(array,number){
+  const filteredArray = newArray2.filter((number) => newArray2.id !== number);
+  newArray2.splice(number,1);
+  return newArray2;
 }
 
+console.log(removeArtist(artists,2));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -288,11 +294,14 @@ Use addArtist to do the following:
 5. Add the newly created object to the copied array, then return the copied array
 🌟 EXAMPLE: Invoking addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development', 'African American', 'I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.') should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
-}
+const array6 = [...artists];
 
-
+function addArtist(array,name,years,genre,nationality,bio) {
+  array6.push({name,years,genre,nationality,bio});
+  return array6;
+  };
+ 
+console.log(addArtist(artists,'JB','1993-2022','Web Design','Black American','I a have background in microbiology and healhtcare.'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
